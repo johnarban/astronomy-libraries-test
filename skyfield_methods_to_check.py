@@ -155,8 +155,9 @@ def parse_time_utc(time_iso: str) -> Time:
     return Time(time_iso, format="isot", scale="utc")
 
 
-def utc_day_start_jd(jd: float) -> float:
-    return int(jd - 0.5) + 0.5
+def to_skyfield_utc(ts: Any, t_utc: Time) -> Any:
+    year, month, day, hour, minute, second = t_utc.ymdhms
+    return ts.utc(int(year), int(month), int(day), int(hour), int(minute), float(second))
 
 
 def pick_target(eph: Any, body_name: str) -> Any:
@@ -165,7 +166,7 @@ def pick_target(eph: Any, body_name: str) -> Any:
             return eph[candidate]
         except Exception:
             pass
-    raise KeyError(f'Could not resolve Skyfield target for "{body_name}"')
+    raise KeyError(f'Could not resolve target for "{body_name}" in {EPHEMERIS}')
 
 
 def to_ecliptic(apparent: Any, t: Any) -> tuple[float, float, float]:
@@ -202,7 +203,8 @@ def first_valid_flagged_time(times_result: Any) -> Any | None:
 def event_utc_hours(jd_start: float, t_event: Any | None) -> float | None:
     if t_event is None:
         return None
-    return finite_or_none((float(t_event.ut1) - jd_start) * 24.0)
+    event_jd_utc = float(Time(t_event.utc_datetime()).jd)
+    return finite_or_none((event_jd_utc - jd_start) * 24.0)
 
 
 def get_sun_values(t: Any, earth: Any, body: Any) -> dict[str, float | None]:
@@ -304,17 +306,26 @@ def main() -> None:
         row = base_row(test_case, index)
         try:
             t_utc = parse_time_utc(test_case["time"]["iso"])
-            jd = float(t_utc.jd)
-            jd_start = utc_day_start_jd(jd)
-            t = ts.ut1_jd(jd)
-            t0 = ts.ut1_jd(jd_start)
-            t1 = ts.ut1_jd(jd_start + 1.0)
+            t = to_skyfield_utc(ts, t_utc)
+            year, month, day, _, _, _ = t_utc.ymdhms
+            t0_utc = Time(
+                f"{int(year):04d}-{int(month):02d}-{int(day):02d}T00:00:00.000",
+                format="isot",
+                scale="utc",
+            )
+            t1_utc = Time(t0_utc.jd + 1.0, format="jd", scale="utc")
+            jd_start = float(t0_utc.jd)
+            t0 = to_skyfield_utc(ts, t0_utc)
+            t1 = to_skyfield_utc(ts, t1_utc)
 
             loc = test_case["location"]
             observer_topo = earth + wgs84.latlon(loc["latitude"], loc["longitude"], elevation_m=loc["height"])
 
             for body_name, methods in METHODS_TO_CHECK.items():
-                body = pick_target(eph, body_name)
+                try:
+                    body = pick_target(eph, body_name)
+                except KeyError:
+                    continue
                 if body_name == "sun":
                     values = get_sun_values(t, earth, body)
                 elif body_name == "moon":
