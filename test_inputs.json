@@ -1,0 +1,71 @@
+{
+  "bodies": [
+    "Sun",
+    "Mercury",
+    "Venus",
+    "Earth",
+    "Moon",
+    "Mars",
+    "Jupiter",
+    "Saturn",
+    "Uranus",
+    "Neptune",
+    "Pluto"
+  ],
+  "locations": [
+    {
+      "name": "equator_prime",
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "height": 0,
+      "description": "Equator / Prime Meridian intersection"
+    },
+    {
+      "name": "greenwich",
+      "latitude": 51.4778,
+      "longitude": 0.0,
+      "height": 0,
+      "description": "Greenwich, UK"
+    },
+    {
+      "name": "boston",
+      "latitude": 42.3601,
+      "longitude": -71.0589,
+      "height": 9,
+      "description": "Boston, MA"
+    },
+    {
+      "name": "north_pole",
+      "latitude": 90.0,
+      "longitude": 0.0,
+      "height": 0,
+      "description": "North Pole"
+    },
+    {
+      "name": "south_pole",
+      "latitude": -90.0,
+      "longitude": 0.0,
+      "height": 0,
+      "description": "South Pole"
+    },
+    {
+      "name": "longitudegyearbyen",
+      "latitude": 78.2232,
+      "longitude": 15.6267,
+      "height": 28,
+      "description": "longitudegyearbyen, Svalbard — inside Arctic Circle"
+    }
+  ],
+  "times": {
+    "march_equinox_2025": "2025-03-20T09:01:00Z",
+    "winter_2026": "2026-01-01T12:00:00Z",
+    "june_solstice_2025": "2025-06-21T02:42:00Z",
+    "september_equinox_2025": "2025-09-22T18:19:00Z",
+    "december_solstice_2025": "2025-12-21T15:03:00Z",
+    "march_lunar_eclipse": "2025-03-14T06:58:43Z",
+    "march_1800": "1880-10-25T13:00:00Z",
+    "march_2100": "2100-10-25T13:00:00Z",
+    "dec_2020": "2020-12-22T13:00:00Z",
+    "oct_2047": "2047-10-25T13:00:00Z"
+  }
+}

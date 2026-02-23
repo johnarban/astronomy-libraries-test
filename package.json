@@ -1,0 +1,9 @@
+{
+  "name": "astronomy-libraries-test",
+  "version": "0.0.0",
+  "description": "Test wwtlib and aa.js astronomy functions",
+  "scripts": {
+    "setup-uv": "command -v conda >/dev/null 2>&1 && conda deactivate || true; uv sync --dev",
+    "out": "node run-first-test-methods-to-check.js && uv run skyfield_methods_to_check.py"
+  }
+}
