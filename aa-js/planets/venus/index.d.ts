@@ -1,0 +1,3 @@
+import { Planet } from '../../types';
+export declare const Venus: Planet;
+//# sourceMappingURL=index.d.ts.map

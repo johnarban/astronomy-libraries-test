@@ -1,0 +1,3 @@
+import { Hour, JulianDay } from '../types';
+export declare function getJDatUTC(jd: JulianDay, utc: Hour): JulianDay;
+//# sourceMappingURL=utils.d.ts.map

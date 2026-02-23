@@ -1,0 +1,7 @@
+import { Degree, EquatorialCoordinates, GeographicCoordinates, LengthArray } from '../types';
+export declare function getDeltaMTimes(m: number, isTransit: boolean, Theta0: Degree, DeltaT: number, equCoords: LengthArray<EquatorialCoordinates, 3>, geoCoords: GeographicCoordinates, alt?: Degree): {
+    Deltam: number;
+    hourAngle: Degree;
+    localAltitude: Degree;
+};
+//# sourceMappingURL=deltamtimes.d.ts.map

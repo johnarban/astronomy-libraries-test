@@ -1,0 +1,4 @@
+import { HorizontalCoordinates, Point } from '../types';
+export declare function transformPointToHorizontal(point: Point, center: Point, radius: number): HorizontalCoordinates;
+export declare function transformHorizontalToPoint(horCoords: HorizontalCoordinates, center: Point, radius: number): Point;
+//# sourceMappingURL=pointsHorizontal.d.ts.map

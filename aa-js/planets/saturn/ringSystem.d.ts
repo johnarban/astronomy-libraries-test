@@ -1,0 +1,3 @@
+import { JulianDay, SaturnRingSystem } from '../../types';
+export declare function getRingSystemDetails(jd: JulianDay): SaturnRingSystem;
+//# sourceMappingURL=ringSystem.d.ts.map

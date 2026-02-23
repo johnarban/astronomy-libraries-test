@@ -1,0 +1,3 @@
+import { DwarfPlanet } from '../../types';
+export declare const Pluto: DwarfPlanet;
+//# sourceMappingURL=index.d.ts.map

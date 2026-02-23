@@ -1,0 +1,3 @@
+import { MarsPlanet } from '../../types';
+export declare const Mars: MarsPlanet;
+//# sourceMappingURL=index.d.ts.map

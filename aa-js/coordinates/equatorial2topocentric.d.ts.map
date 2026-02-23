@@ -1,0 +1,1 @@
+{"version":3,"file":"equatorial2topocentric.d.ts","sourceRoot":"","sources":["../../src/coordinates/equatorial2topocentric.ts"],"names":[],"mappings":"AAAA,OAAO,EAEL,gBAAgB,EAChB,qBAAqB,EACrB,qBAAqB,EAErB,SAAS,EAET,sBAAsB,EACvB,MAAM,SAAS,CAAA;AAchB,wBAAgB,gCAAgC,CAAE,EAAE,EAAE,SAAS,EACb,MAAM,EAAE,qBAAqB,EAC7B,QAAQ,EAAE,gBAAgB,EAC1B,SAAS,EAAE,qBAAqB,GAAG,sBAAsB,CA2B1G"}

@@ -1,0 +1,4 @@
+import { JulianDay } from '../../types';
+export declare function getAphelion(jd: JulianDay): JulianDay;
+export declare function getPerihelion(jd: JulianDay): JulianDay;
+//# sourceMappingURL=base.d.ts.map

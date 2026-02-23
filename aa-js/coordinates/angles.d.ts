@@ -1,0 +1,4 @@
+import { Degree, EquatorialCoordinates, GeographicCoordinates, JulianDay } from '../types';
+export declare function getParallacticAngle(jd: JulianDay, equCoords: EquatorialCoordinates, geoCoords: GeographicCoordinates): Degree;
+export declare function getGreatCircleAngularDistance(coords1: EquatorialCoordinates, coords2: EquatorialCoordinates): Degree;
+//# sourceMappingURL=angles.d.ts.map

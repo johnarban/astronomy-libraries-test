@@ -1,0 +1,26 @@
+import { Kilometer } from './units';
+import { EclipticCoordinatesAtJulianDayWithEquinoxFunction, EclipticCoordinatesAtJulianDayFunction, EquatorialCoordinatesAtJulianDayWithEquinoxFunction, EquatorialCoordinatesAtJulianDayFunction, QuantityAtJulianDayFunction, QuantityInDegreeAtJulianCenturyFunction, QuantityInDegreeAtJulianDayFunction, RiseTransitSetTimesAtJulianDayAndGeographicCoordinatesFunction, SingleCoordinateDegreeAtJulianDayWithEquinoxFunction, SingleCoordinateDegreeAtJulianDayFunction } from './funcs';
+export type SunConstants = {
+    equatorialRadius: Kilometer;
+};
+export interface NaturalSun {
+    getMeanAnomaly: QuantityAtJulianDayFunction;
+    getTrueAnomaly: QuantityAtJulianDayFunction;
+    getEquationOfTheCenter: Function;
+    getMeanLongitudeReferredToMeanEquinoxOfDate: QuantityInDegreeAtJulianCenturyFunction;
+    getGeometricEclipticLongitude: QuantityInDegreeAtJulianDayFunction;
+    getGeocentricEclipticLongitude: SingleCoordinateDegreeAtJulianDayWithEquinoxFunction;
+    getGeocentricEclipticLatitude: SingleCoordinateDegreeAtJulianDayWithEquinoxFunction;
+    getGeometricFK5EclipticLongitude: SingleCoordinateDegreeAtJulianDayWithEquinoxFunction;
+    getGeometricFK5EclipticLatitude: SingleCoordinateDegreeAtJulianDayWithEquinoxFunction;
+    getGeocentricEclipticCoordinates: EclipticCoordinatesAtJulianDayWithEquinoxFunction;
+    getGeocentricEquatorialCoordinates: EquatorialCoordinatesAtJulianDayWithEquinoxFunction;
+    getApparentGeocentricEclipticLongitude: SingleCoordinateDegreeAtJulianDayFunction;
+    getApparentGeocentricEclipticLatitude: SingleCoordinateDegreeAtJulianDayFunction;
+    getApparentGeocentricEclipticCoordinates: EclipticCoordinatesAtJulianDayFunction;
+    getApparentGeocentricEquatorialCoordinates: EquatorialCoordinatesAtJulianDayFunction;
+    getVariationGeometricEclipticLongitude: QuantityInDegreeAtJulianDayFunction;
+    getRiseTransitSet: RiseTransitSetTimesAtJulianDayAndGeographicCoordinatesFunction;
+    constants: SunConstants;
+}
+//# sourceMappingURL=sun.d.ts.map

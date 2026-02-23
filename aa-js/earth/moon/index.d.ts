@@ -1,0 +1,3 @@
+import { NaturalMoon } from '../../types';
+export declare const Moon: NaturalMoon;
+//# sourceMappingURL=index.d.ts.map

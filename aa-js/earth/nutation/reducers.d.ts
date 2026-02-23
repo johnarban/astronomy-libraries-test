@@ -1,0 +1,3 @@
+import { Degree, JulianCentury } from '../../types';
+export declare function getReducedValue(T: JulianCentury, D: Degree, M: Degree, Mprime: Degree, F: Degree, omega: Degree, sinOrCos: 'sin' | 'cos'): number;
+//# sourceMappingURL=reducers.d.ts.map

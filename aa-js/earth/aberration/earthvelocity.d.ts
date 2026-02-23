@@ -1,0 +1,3 @@
+import { Coordinates3D, JulianDay } from '../../types';
+export declare function getEarthVelocity(jd: JulianDay): Coordinates3D;
+//# sourceMappingURL=earthvelocity.d.ts.map

@@ -1,0 +1,4 @@
+import { KilometerPerSecondPerMegaParsec } from '../types';
+export declare function getOmegaR(H0: KilometerPerSecondPerMegaParsec): number;
+export declare function getOmegaK(H0: KilometerPerSecondPerMegaParsec, omegaMat: number, omegaVac: number): number;
+//# sourceMappingURL=omegas.d.ts.map

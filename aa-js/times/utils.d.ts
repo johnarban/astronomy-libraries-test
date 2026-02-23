@@ -1,0 +1,4 @@
+import { JulianDay } from '../types';
+export declare function getDeltaT(jd: JulianDay): number;
+export declare function getCumulativeLeapSeconds(jd: JulianDay): number;
+//# sourceMappingURL=utils.d.ts.map

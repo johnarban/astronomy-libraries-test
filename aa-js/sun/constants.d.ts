@@ -1,0 +1,3 @@
+import { SunConstants } from '../types';
+export declare const constants: SunConstants;
+//# sourceMappingURL=constants.d.ts.map

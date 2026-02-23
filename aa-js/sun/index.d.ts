@@ -1,0 +1,3 @@
+import { NaturalSun } from '../types';
+export declare const Sun: NaturalSun;
+//# sourceMappingURL=index.d.ts.map

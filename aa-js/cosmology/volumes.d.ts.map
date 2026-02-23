@@ -1,0 +1,1 @@
+{"version":3,"file":"volumes.d.ts","sourceRoot":"","sources":["../../src/cosmology/volumes.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,WAAW,EAAE,+BAA+B,EAAE,MAAM,SAAS,CAAA;AAUtE,wBAAgB,iBAAiB,CAAE,MAAM,EAAE,MAAM,EAAE,IAAI,EAAE,MAAM,GAAG,WAAW,CAe5E;AAUD,wBAAgB,+BAA+B,CAAE,EAAE,EAAE,+BAA+B,EAAE,QAAQ,EAAE,MAAM,EAAE,QAAQ,EAAE,MAAM,EAAE,CAAC,EAAE,MAAM,GAAG,WAAW,CAMhJ"}

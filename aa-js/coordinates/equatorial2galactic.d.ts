@@ -1,0 +1,5 @@
+import { Degree, EquatorialCoordinates, GalacticCoordinates, JulianDay } from '../types';
+export declare function getGalacticLongitudeFromEquatorial(coords: EquatorialCoordinates, epoch?: JulianDay): Degree;
+export declare function getGalacticLatitudeFromEquatorial(coords: EquatorialCoordinates, epoch?: JulianDay): Degree;
+export declare function transformEquatorialToGalactic(coords: EquatorialCoordinates, epoch?: JulianDay): GalacticCoordinates;
+//# sourceMappingURL=equatorial2galactic.d.ts.map

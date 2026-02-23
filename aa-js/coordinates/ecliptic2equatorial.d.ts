@@ -1,0 +1,5 @@
+import { Degree, EclipticCoordinates, EquatorialCoordinates } from '../types';
+export declare function getRightAscensionFromEcliptic(coords: EclipticCoordinates, epsilon?: Degree): Degree;
+export declare function getDeclinationFromEcliptic(coords: EclipticCoordinates, epsilon?: Degree): Degree;
+export declare function transformEclipticToEquatorial(coords: EclipticCoordinates, epsilon?: Degree): EquatorialCoordinates;
+//# sourceMappingURL=ecliptic2equatorial.d.ts.map

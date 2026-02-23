@@ -1,0 +1,4 @@
+import { Degree, JulianDay } from '../types';
+export declare function getCorrectionInLongitude(jd: JulianDay, lng: Degree, lat: Degree): Degree;
+export declare function getCorrectionInLatitude(jd: JulianDay, lng: Degree): Degree;
+//# sourceMappingURL=fk5.d.ts.map

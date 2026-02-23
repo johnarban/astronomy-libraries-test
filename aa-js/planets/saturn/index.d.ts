@@ -1,0 +1,3 @@
+import { SaturnPlanet } from '../../types';
+export declare const Saturn: SaturnPlanet;
+//# sourceMappingURL=index.d.ts.map

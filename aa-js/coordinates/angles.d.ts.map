@@ -1,0 +1,1 @@
+{"version":3,"file":"angles.d.ts","sourceRoot":"","sources":["../../src/coordinates/angles.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,MAAM,EAAE,qBAAqB,EAAE,qBAAqB,EAAE,SAAS,EAAU,MAAM,SAAS,CAAA;AASjG,wBAAgB,mBAAmB,CAAE,EAAE,EAAE,SAAS,EAAE,SAAS,EAAE,qBAAqB,EAAE,SAAS,EAAE,qBAAqB,GAAG,MAAM,CA0B9H;AASD,wBAAgB,6BAA6B,CAAE,OAAO,EAAE,qBAAqB,EAAE,OAAO,EAAE,qBAAqB,GAAG,MAAM,CAerH"}

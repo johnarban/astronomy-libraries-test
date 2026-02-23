@@ -1,0 +1,3 @@
+import { NaturalEarth } from '../types';
+export declare const Earth: NaturalEarth;
+//# sourceMappingURL=index.d.ts.map
